@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		body{background-color: hsla(223,45%,28%,1.00);}
+		img{width:180px;
+			margin:60px 5px 5px 5px;
+		}
+		/*.kuang{font-family:verdana;
+			padding:20px;
+			height: 500px;
+			border-radius:10px;
+			border:10px solid hsla(22,21%,47%,1.00);
+	
+		}*/
+		#img0{position:fixed;
+		      left:20px;}
+		#img1{position:fixed;
+		      left:210px;}
+		#img2{position:fixed;
+		      left:400px;}
+		#img3{position:fixed;
+		      left:590px;}
+		#img4{position:fixed;
+		      left:20px;
+		top:300px;}
+		#img5{position:fixed;
+		      left:210px;
+		top:300px;}
+		#img6{position:fixed;
+		      left:400px;
+		top:300px;}
+		#img7{position:fixed;
+		      left:590px;
+		top:300px;}
+		
+		#myPicture{width:800px;
+		position:fixed;
+		left:0px;
+		top:0px;}
+		#demo{position:fixed;
+		height:200px;
+		width:300px;
+		right:50px;
+	    top:50px;
+		display: none;
+		border:3px solid white;
+		font-size:30px;
+		color:white;
+		background: black;
+		overflow: hidden;
+		}
+		#demo1{ position:fixed;
+		right:180px;
+		bottom:90px;}
+		#demo2{ position:fixed;
+		right:40px;
+		bottom:90px;}
+		#demo3{position: fixed;
+			right:110px;
+			bottom:50px;
+		}
+		#shu{position:fixed;
+		right:180px;
+		bottom:70px;}
+		#demo4{
+			position:fixed;
+			right:250px;
+			bottom:50px;
+			color:hsla(0,0%,100%,1.00);
+		}
+	</style>
+      
+</head>
+
+<body>
+	<!--<div class="kuang">-->
+			
+	<img id="myPicture">
+	<img id="img0" src="image/8.jpg" alt="0">
+	<img id="img1" src="image/8.jpg" alt="1">
+	<img id="img2"src="image/8.jpg" alt="2">
+	<img id="img3"src="image/8.jpg" alt="3">	
+	<br>
+	<img id="img4"src="image/8.jpg" alt="4">
+	<img id="img5"src="image/8.jpg" alt="5">	
+	<img id="img6"src="image/8.jpg" alt="6">
+	<img id="img7"src="image/8.jpg" alt="7">
+    <p id="demo"></p>
+    <!--<button id="demo1"></button>-->
+    <img id="demo1" src="image/41.jpg" alt="惩罚选取">
+	<img id="demo2" src="image/40.jpg" alt="努力学习">
+	<button id="demo3" onclick="replaceDoc()">再来一轮</button>
+    <p id="shu">输了就乖乖点我吧。</p>
+	     <!--  <button id = "btn">四：拜托，</button>-->
+       <a href="index.html" id="demo4">返回主页</a>
+</body>
+	<script>
+window.onload = xipai;
+function xipai() {
+    var pai = new Array("image/20.jpg","image/21.jpg","image/32.jpg","image/33.jpg","image/34.jpg","image/35.jpg","image/36.jpg","image/37.jpg");
+    var randomNum = Math.floor((Math.random() * pai.length));
+    document.getElementById("myPicture").src = pai[randomNum];
+}
+	
+ 
+    var pic1 = document.getElementById("img1");
+    pic1.onclick= function (){
+        pic1.style.display = "none";
+    }
+var pic0 = document.getElementById("img0");
+    pic0.onclick= function (){
+        pic0.style.display = "none";
+    }
+var pic2 = document.getElementById("img2");
+    pic2.onclick= function (){
+        pic2.style.display = "none";
+    }
+var pic3 = document.getElementById("img3");
+    pic3.onclick= function (){
+        pic3.style.display = "none";
+    }
+var pic4 = document.getElementById("img4");
+    pic4.onclick= function (){
+        pic4.style.display = "none";
+    }
+var pic5 = document.getElementById("img5");
+    pic5.onclick= function (){
+        pic5.style.display = "none";
+    }
+	var pic6 = document.getElementById("img6");
+    pic6.onclick= function (){
+        pic6.style.display = "none";
+    }
+var pic7 = document.getElementById("img7");
+    pic7.onclick= function (){
+        pic7.style.display = "none";
+    }
+var a = Math.random() + "" 
+
+var rand1 = a.charAt(2) 
+quotes = new Array 
+quotes[1] = '做十五个深蹲'
+quotes[2] = '做五个深蹲'
+quotes[3] = '做二十个仰卧起坐'
+quotes[4] = '做三十个仰卧起坐'
+quotes[5] = '绕操场跑一圈'
+quotes[6] = '绕操场跑两圈'
+quotes[7] = '做五个俯卧撑'
+quotes[8] = '做八个波比跳'
+quotes[9] = '做四个波比跳'
+quotes[0] = '免除一轮惩罚'
+var quote = quotes[rand1] 
+document.getElementById("demo").innerHTML=quote;
+		
+var DEMO=document.getElementById("demo");
+var DEMO1=document.getElementById("demo1");
+		
+DEMO1.onclick=function(){
+	DEMO.style.display="block";
+}
+
+function replaceDoc()
+{
+window.location.replace("游戏3.html")
+}
+    
+	</script>
+</html>
